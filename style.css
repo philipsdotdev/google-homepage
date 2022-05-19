@@ -13,6 +13,7 @@ html {
 
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .menu-button {
@@ -106,20 +107,36 @@ a {
     align-self: end;
 }
 #search {
+    display: flex;
     grid-area: search;
     align-self: end;
+    justify-self: center;
 }
+
+.search-icon {
+    width: 14px;
+    height: 14px;    
+}
+
+input {    
+    width: 584px;
+    height: 44px;
+    border-color: rgb(223 225 229 / 0%);
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    z-index: -1;
+    background: #ffffff;
+    box-shadow: none;
+    margin: 0 auto;
+}
+
 #flexbox {
     display: flex;
     grid-area: flexbox;
     justify-self: center;
     align-self: center;
 }
-/* #search-button {
-    grid-area: search-button;
-    justify-self: center;
-    align-self: center;
-} */
+
 #offerings {
     grid-area: offerings;
     justify-self: center;    
