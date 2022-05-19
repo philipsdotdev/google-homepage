@@ -1,0 +1,113 @@
+html {
+    height: 100%;
+    min-height: 100%;
+    font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+}
+
+.menu-button {
+    height: 16px;
+    width: 16px;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.lang-options {
+    color: #1a0dab;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+
+/* header section */
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px 50px;
+    grid-template-rows: 48px;
+    grid-template-areas: ". gmail images menu-box sign-in";
+    padding: 6px;
+    align-items: center;
+    height: 60px;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+#menu-box {
+    grid-area: menu-box;
+    justify-self: center;
+    align-self: center;
+}
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+}
+
+
+/* main section */
+#main {
+    display: grid;
+    grid-template-columns: 1fr 586px 1fr;
+    grid-template-rows: 108px 70px 70px 199px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". offerings .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+#search {
+    grid-area: search;
+    align-self: end;
+}
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+/* #search-button {
+    grid-area: search-button;
+    justify-self: center;
+    align-self: center;
+} */
+#offerings {
+    grid-area: offerings;
+    justify-self: center;    
+}
+/* #country {
+    grid-area: country;
+} */
+
+
+/* footter section */
